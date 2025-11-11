@@ -1,1 +1,31 @@
+#!/bin/bash
+set -e
+PROJECT_NAME="djp-sound"
+DOMAIN="djpsound.com"
+VERCEL_TEAM_ID="team_XXXX"  # remplace par ton scope/equipe Vercel
+GIT_REPO="https://github.com/your-account/djp-sound.git"
+
+echo "🚀 Clonage..."
+rm -rf $PROJECT_NAME || true
+git clone $GIT_REPO $PROJECT_NAME || true
+cd $PROJECT_NAME || exit 1
+
+echo "📦 Installation des dépendances..."
+npm ci || npm install
+
+echo "🔧 Variables d'environnement (modèle)"
+cp .env.production.sample .env.production || true
+echo "Veuillez modifier .env.production pour ajouter votre OPENAI_API_KEY avant le déploiement."
+
+echo "🏗️ Build..."
+npm run build || true
+
+echo "🚀 Déploiement (npx vercel)"
+npx vercel --prod --yes --scope $VERCEL_TEAM_ID || true
+
+echo "🌐 Domaine (alias)"
+npx vercel domains add $DOMAIN || true
+npx vercel alias set $PROJECT_NAME.vercel.app $DOMAIN || true
+
+echo "✅ Déploiement script terminé."
 <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
