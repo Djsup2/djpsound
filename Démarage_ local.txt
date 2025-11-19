@@ -1,0 +1,5 @@
+@echo off
+echo [DJP] Démarrage local...
+python scripts/DJP-Watchdog.py
+powershell -ExecutionPolicy Bypass -File scripts/DJP-PackBuilder.ps1
+pause
