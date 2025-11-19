@@ -1,0 +1,26 @@
+djp_dekis/
+├── README.md
+├── LICENSE.txt
+├── .gitignore
+├── next.config.js
+├── package.json
+├── tsconfig.json
+├── public/
+│   └── logo.png
+├── src/
+│   ├── dashboard/
+│   │   └── CreatorVault.tsx
+│   ├── web3/
+│   │   └── access.ts
+│   ├── ia/
+│   │   └── remix.ts
+│   ├── vault/
+│   │   └── PackBuilder.ts
+├── scripts/
+│   ├── DJP-PackBuilder.ps1
+│   ├── DJP-Watchdog.py
+│   ├── DJP-Start.bat
+│   └── DJP-Deploy.sh
+├── .github/
+│   └── workflows/
+│       └── ci.yml
