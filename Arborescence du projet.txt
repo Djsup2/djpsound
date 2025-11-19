@@ -1,0 +1,29 @@
+djp_dekis/
+├── README.md
+├── LICENSE.txt
+├── .gitignore
+├── deploy.yml
+├── djp-optimisé-déploiement.sh
+├── next.config.js
+├── package.json
+├── tsconfig.json
+├── postcss.config.mjs
+├── eslint.config.mjs
+├── security-headers.js
+├── public/
+│   └── logo.png
+├── src/
+│   ├── web3/
+│   │   └── access.ts
+│   ├── ia/
+│   │   └── remix.ts
+│   ├── dashboard/
+│   │   └── CreatorVault.tsx
+│   ├── vault/
+│   │   └── PackBuilder.ts
+├── scripts/
+│   ├── DJP-PackBuilder.ps1
+│   ├── DJP-Watchdog.py
+│   └── DJP-Start.bat
+└── packs/
+    └── (auto-générés)
