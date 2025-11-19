@@ -1,0 +1,16 @@
+DJP-Sound-Package/
+├── DJP-Sound/                  # Tier 1 : Code source + scripts
+│   ├── server/                 # Flask + SHA256
+│   ├── dashboard/             # HTML + Chart.js
+│   ├── scripts/
+│   │   ├── DJP-Check.ps1       # Audit SHA256 + versioning
+│   │   ├── DJP-Package.ps1     # Archivage + rotation + log
+│   │   └── DJP-Start.bat       # Lancement serveur + dashboard
+│   ├── config/
+│   │   ├── tokens.json         # DJP-Stream & DJP-Download actifs
+│   │   └── settings.json       # SPL, burn, accès
+│   └── assets/                # Logo, favicon, visuels
+├── README.md                  # Tier 3 : Documentation publique
+├── LICENSE.txt                # Tier 3 : Conditions DJP token
+├── reorg.log                  # Journalisation packaging
+└── djp_dekis_package_YYYYMMDD_HHMMSS.zip  # Archive finale
