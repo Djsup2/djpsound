@@ -1,0 +1,32 @@
+djp_dekis/
+├── README.md
+├── LICENSE.txt
+├── .gitignore
+├── deploy.yml
+├── next.config.js
+├── package.json
+├── tsconfig.json
+├── public/
+│   └── logo.png
+├── packs/
+│   ├── source/
+│   ├── output/
+│   ├── logs/
+│   └── djp-sound.zip
+├── src/
+│   ├── web3/
+│   │   └── access.ts
+│   ├── ia/
+│   │   └── remix.ts
+│   ├── dashboard/
+│   │   └── CreatorVault.tsx
+│   ├── vault/
+│   │   └── PackBuilder.ts
+├── scripts/
+│   ├── DJP-PackBuilder.ps1
+│   ├── DJP-Watchdog.py
+│   ├── DJP-Test.ps1
+│   └── DJP-Start.bat
+└── .github/
+    └── workflows/
+        └── ci.yml
